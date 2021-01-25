@@ -7,6 +7,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "vue/no-unused-components": ["error", {
+    "ignoreWhenBindingPresent": true
+  }],
   "dependencies": {
     "core-js": "^3.6.5",
     "materialize-css": "^1.0.0-rc.2",
@@ -41,6 +44,7 @@
     },
     "rules": {}
   },
+
   "browserslist": [
     "> 1%",
     "last 2 versions",
