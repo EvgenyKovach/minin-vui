@@ -61,7 +61,7 @@
 <script>
 /* eslint-disable */ 
 import {email, required, minLength} from 'vuelidate/lib/validators'
-import messages from "@/mesages";
+import messages from "@/utills/messages";
 
 export default {
   name: 'login',
@@ -88,9 +88,7 @@ export default {
       try {
         await this.$store.dispatch("login", formData)
         this.$router.push('/')
-      } catch (e) {   console.log(e);  }
-
-      
+      } catch (e) {    }
     }
   },
   mounted() {
